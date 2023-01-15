@@ -1,7 +1,9 @@
+; global key is used to make an identifier accessible to the linker
 global _start
 
 section .text
 
+;identifier _start is used to make a label 
 _start:
   mov rax, 1        ; write(
   mov rdi, 1        ;   STDOUT_FILENO,
